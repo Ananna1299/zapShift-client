@@ -14,7 +14,8 @@ const BeARider = () => {
         register,
         handleSubmit,
         formState: { errors },
-        control
+        control,
+        reset
     }= useForm()
 
     const regionDup=serviceCenter.map(r=>r.region)
@@ -37,6 +38,7 @@ const BeARider = () => {
         axiosSecure.post("/riders",data)
         .then(res=>{
             console.log(res.data)
+            reset()
         })
 
     }

@@ -1,16 +1,26 @@
-# React + Vite
+ZapShift- Percel Delivery Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview: Developed a role-based parcel delivery management system that allows users to send parcels
+to designated destinations and track delivery status. Admin manages parcel operations and riders, while riders
+handle parcel collection, delivery, and update the parcel delivery status.
 
-Currently, two official plugins are available:
+Technologies: React, Tailwind CSS, Node.js, MongoDB,JWT
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features:
+• Users can book parcels, pay charges, and track status.
+• Admin can manage the parcels and riders.
+• Riders can collect/deliver parcels and update status.
 
-## React Compiler
+Live Link: https://zap-shift-client-ce1c4.web.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dependencies: @tailwindcss/vite", "@tanstack/react-query", "axios", "firebase", "leaflet", "react", "react-dom", "react-hook-form", "react-icons", "react-leaflet", "react-responsive-carousel", "react-router", "recharts", "sweetalert2", "swiper", "tailwindcss
 
-## Expanding the ESLint configuration
+Running the Project Locally:
+1. Clone the repository: git clone <your-repo-link>
+2. Navigate to the project folder: cd <project-folder>
+3. Install dependencies: npm install
+4. Set up environment variables:
+        ->Create a .env file in the root directory.
+        ->Add any required keys, for example: VITE_API_KEY=your_api_key_here, VITE_FIREBASE_CONFIG=your_firebase_config_here
+5. Start the development server: npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
